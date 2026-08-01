@@ -1,0 +1,25 @@
+<!doctype html>
+<!-- Catch historical or mistyped paths inside /holy_landing/. Known terms
+     links go to their canonical document; everything else reaches Holy. -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Holy has moved</title>
+    <meta name="robots" content="noindex, follow" />
+    <script>
+      const termsPath = /\/terms\/holy-terms\.html\/?$/i.test(location.pathname);
+      const destination = new URL(
+        termsPath
+          ? 'https://armandojimenez.dev/apps/holy/terms.html'
+          : 'https://armandojimenez.dev/holy/'
+      );
+      destination.search = location.search;
+      destination.hash = location.hash;
+      location.replace(destination.href);
+    </script>
+  </head>
+  <body>
+    <p><a href="https://armandojimenez.dev/holy/">Continue to Holy.</a></p>
+  </body>
+</html>

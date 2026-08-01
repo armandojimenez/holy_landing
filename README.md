@@ -1,7 +1,8 @@
+# Holy legacy landing
 
-# Holy
-## Landing page for Holy - Daily Bible Verses
+Permanent compatibility redirects from `armandojimenez.dev/holy_landing/` to
+the rebuilt Holy site at `armandojimenez.dev/holy/`.
 
-[Visit live website](https://holyverses.app/)
-
-![Believe](believe_web.png)
+Keep this GitHub Pages project online because shipped app versions and old
+external links may continue to request the legacy root or
+`terms/holy-terms.html`.
